@@ -1,0 +1,72 @@
+body {
+    width: 400px;
+    background: #fff;
+    margin: 0;
+    padding: 0
+}
+
+header {
+    padding: 10px;
+    background: #4db6ac;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff
+}
+
+main {
+    padding: 10px
+}
+
+.contacts_container {
+    width: 93%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #f0f0f0;
+    border: 0;
+    min-height: 200px;
+    display: none;
+    font-size: 12px
+}
+
+button {
+    width: 100%;
+    text-align: center;
+    padding: 5px 15px;
+    border: 2px solid;
+    background: #fff;
+    margin-right:5px
+}
+
+.catch_btn {
+    border-color: #2962ff;
+    color: #2962ff
+}
+
+.copy_btn {
+    border-color: #00c853;
+    color: #00c853;
+    display: none
+}
+
+.actions_container {
+    display: flex;
+    justify-content: flex-start
+}
+
+p {
+    font-size: 12px;
+    display: none
+}
+
+.error_message {
+    color: #c62828
+}
+
+.info_message {
+    color: #00c853
+}

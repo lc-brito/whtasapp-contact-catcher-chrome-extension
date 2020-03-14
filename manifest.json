@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "WhatsApp Contact Catcher",
+  "version": "0.0.1",
+  "description": "Captura número de contatos de WhatsApp que não estejam na lista de contatos do dispositivo",
+  "icons": {
+    "128": "images/128.png",
+    "48": "images/48.png",
+    "16": "images/16.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "128": "images/128.png",
+      "48": "images/48.png",
+      "16": "images/16.png"
+    },
+    "default_title": "WhatsApp Contact Catcher",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/"],
+      "js": ["assets/content.js"],
+      "css": ["assets/style.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["tabs", "activeTab"],
+  "background": {
+    "scripts": ["assets/background.js"]
+  }
+}
